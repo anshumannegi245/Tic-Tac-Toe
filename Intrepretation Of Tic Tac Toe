@@ -1,0 +1,64 @@
+# Tic-Tac-Toe Game in Python
+
+This repository contains a simple implementation of the classic Tic-Tac-Toe game in Python.  You can play against a basic AI opponent.
+
+## How to Play
+
+
+1.  **Run the game:**
+    ```bash
+    python tic_tac_toe.py  # Or python3 tic_tac_toe.py depending on your setup
+    ```
+
+2.  **Follow the on-screen instructions:**
+    *   Choose whether you want to be 'X' or 'O'.
+    *   The game will randomly decide who goes first.
+    *   Enter the number (1-9) corresponding to the space where you want to place your symbol.
+    *   The AI will then make its move.
+    *   The game continues until someone wins or it's a tie.
+    *   You'll be asked if you want to play again.
+
+## Features
+
+*   **Human vs. AI:** Play against a simple AI opponent.
+*   **Clear Board Display:** The game board is displayed in a user-friendly format.
+*   **Input Validation:**  Ensures that player input is valid (within range and unoccupied).
+*   **Basic AI:** The AI tries to win, block the player, or choose strategic positions.
+*   **Win/Tie Detection:**  Accurately detects wins and ties.
+*   **Play Again Option:**  Allows for multiple games without restarting the script.
+*   **Random Turn Order:**  Adds variety to the game.
+
+## AI Strategy
+
+The AI opponent uses a simple strategy:
+
+1.  Check if it can win in the next move.
+2.  Check if the player can win in the next move and block them.
+3.  Choose a corner space if available.
+4.  Choose the center space if available.
+5.  Choose a side space.
+
+## Code Structure
+
+The code is organized into functions for:
+
+*   `drawBoard()`: Displays the game board.
+*   `inputPlayerLetter()`: Gets the player's choice of X or O.
+*   `whoGoesFirst()`: Randomly determines who goes first.
+*   `playAgain()`: Asks the player if they want to play again.
+*   `makeMove()`: Updates the board with a move.
+*   `isWinner()`: Checks for a winner.
+*   `getBoardCopy()`: Creates a copy of the board.
+*   `isSpaceFree()`: Checks if a space is free.
+*   `getPlayerMove()`: Gets the player's move.
+*   `chooseRandomMoveFromList()`: Chooses a random move from a list.
+*   `getComputerMove()`: Determines the AI's move.
+*   `isBoardFull()`: Checks if the board is full.
+
+## Requirements
+
+Python 3.x
+
+## Contributing
+
+Contributions are welcome!  Feel free to submit pull requests.
